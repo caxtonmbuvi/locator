@@ -1,4 +1,3 @@
-// api_service.dart
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -16,6 +15,4 @@ class ApiService {
       throw Exception('Failed to load data');
     }
   }
-
-  // You can add more methods for post, put, delete, etc.
 }
