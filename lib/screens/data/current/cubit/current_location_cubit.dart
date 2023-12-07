@@ -1,4 +1,3 @@
-import 'package:geocoding/geocoding.dart';
 
 import '../../../../exports.dart';
 import '../models/current_location.dart';

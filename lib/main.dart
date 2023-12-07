@@ -1,5 +1,3 @@
-// import 'package:locator_app/screens/data/current/cubit/cubit/map_cubit.dart';
-
 import 'exports.dart';
 
 void main() {

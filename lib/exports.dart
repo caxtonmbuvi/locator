@@ -5,9 +5,7 @@ export 'package:google_maps_flutter/google_maps_flutter.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:flutter_bloc/flutter_bloc.dart';
 export 'screens/pages/home.dart';
-export 'package:expansion_tile_group/expansion_tile_group.dart';
 export 'package:google_nav_bar/google_nav_bar.dart';
-export 'package:line_icons/line_icons.dart';
 export 'dart:typed_data';
 
 
