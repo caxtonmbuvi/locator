@@ -277,25 +277,6 @@ Widget loadBody(HistoryLocationModel data) {
                                   ),
                                 ),
                               ),
-                              // SizedBox(
-                              //   height: 30.h,
-                              //   child: ElevatedButton(
-                              //     onPressed: () {},
-                              //     // styling the button
-                              //     style: ElevatedButton.styleFrom(
-                              //       shape: const CircleBorder(),
-                              //       padding: EdgeInsets.all(7.r),
-                              //       // Button color
-                              //       backgroundColor: ColorName.whiteColor,
-                              //     ),
-                              //     // icon of the button
-                              //     child: FaIcon(
-                              //       FontAwesomeIcons.chevronUp,
-                              //       size: 16.sp,
-                              //       color: ColorName.darkGrey,
-                              //     ),
-                              //   ),
-                              // ),
                             ],
                           ),
                           SizedBox(
