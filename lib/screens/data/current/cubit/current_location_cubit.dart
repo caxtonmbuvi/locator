@@ -1,6 +1,5 @@
 
 import '../../../../exports.dart';
-import '../models/current_location.dart';
 
 part 'current_location_state.dart';
 

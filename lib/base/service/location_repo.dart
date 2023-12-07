@@ -12,11 +12,8 @@ class LocationRepository {
   }
 
   Future<HistoryLocationModel> fetchLocationHistory() async {
-    print("Id is: " + globals.selected!.id.toString());
     final data =
         await _apiService.get('locationHistory/${globals.selected!.id}');
     return HistoryLocationModel.fromJson(data);
   }
-
-  // You can add more methods to fetch other resources like comments, users, etc.
 }
