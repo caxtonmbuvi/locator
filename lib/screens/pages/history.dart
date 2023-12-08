@@ -37,7 +37,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
           } else if (state is HistoryLocationLoaded) {
             // addMarkers(state.data);
 
-            return loadBody(state.data);
+            return loadBody(context,state.data);
           } else {
             return Center(
               child: AppText.large("No New Data"),
@@ -49,7 +49,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
   }
 }
 
-Widget loadBody(HistoryLocationModel data) {
+Widget loadBody(BuildContext context, HistoryLocationModel data) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 15.w),
     child: Stack(
@@ -64,7 +64,9 @@ Widget loadBody(HistoryLocationModel data) {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                     // styling the button
                     style: ElevatedButton.styleFrom(
                       shape: const CircleBorder(),
@@ -135,11 +137,10 @@ Widget loadBody(HistoryLocationModel data) {
                               borderRadius: BorderRadius.circular(30.r),
                               border: Border.all(color: ColorName.lightGrey)),
                           child: Center(
-                            child: Icon(
-                              Icons.info_outline,
-                              size: 20.sp,
-                            )
-                          ),
+                              child: Icon(
+                            Icons.info_outline,
+                            size: 20.sp,
+                          )),
                         ),
                         SizedBox(
                           width: 10.w,
@@ -152,7 +153,7 @@ Widget loadBody(HistoryLocationModel data) {
                           padding: EdgeInsets.symmetric(
                               horizontal: 15.w, vertical: 5.h),
                           decoration: BoxDecoration(
-                              color: Colors.lightGreenAccent,
+                              color: ColorName.primaryColor,
                               borderRadius: BorderRadius.circular(20.r)),
                           child: Center(
                             child: AppText.medium("id ${globals.selected!.id}"),
@@ -205,7 +206,9 @@ Widget loadBody(HistoryLocationModel data) {
                               )
                             ],
                           ),
-                          SizedBox(height: 7.h,),
+                          SizedBox(
+                            height: 7.h,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -218,7 +221,9 @@ Widget loadBody(HistoryLocationModel data) {
                               ),
                             ],
                           ),
-                          SizedBox(height: 7.h,),
+                          SizedBox(
+                            height: 7.h,
+                          ),
                           Padding(
                             padding: EdgeInsets.only(bottom: 20.h),
                             child: Row(

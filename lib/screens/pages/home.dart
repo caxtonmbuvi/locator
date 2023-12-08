@@ -178,7 +178,7 @@ Widget buildData(List<CurrentLocationModel> data, List<Marker> markers) {
                             padding: EdgeInsets.all(8.r),
                             margin: EdgeInsets.all(5.r),
                             decoration: BoxDecoration(
-                                color: Colors.lightGreenAccent,
+                                color: ColorName.primaryColor,
                                 borderRadius: BorderRadius.circular(20.r)),
                             child: Center(
                               child: Padding(
@@ -212,7 +212,7 @@ Widget buildData(List<CurrentLocationModel> data, List<Marker> markers) {
                             padding: EdgeInsets.all(8.r),
                             margin: EdgeInsets.all(5.r),
                             decoration: BoxDecoration(
-                                color: Colors.lightGreenAccent,
+                                color: ColorName.primaryColor,
                                 borderRadius: BorderRadius.circular(20.r)),
                             child: Center(
                               child: Padding(
@@ -243,7 +243,7 @@ Widget buildData(List<CurrentLocationModel> data, List<Marker> markers) {
                     size: Size(ScreenUtil().screenWidth,
                         200), // You can change this to your desired size
                     painter: CurvedSideContainerPainter(
-                        color: Colors.lightGreenAccent,
+                        color: ColorName.primaryColor,
                         topCurve: 0.15,
                         bottomCurve: 0.85),
                     child: Container(
@@ -293,7 +293,7 @@ Widget buildData(List<CurrentLocationModel> data, List<Marker> markers) {
                                 padding: EdgeInsets.all(8.r),
                                 margin: EdgeInsets.all(5.r),
                                 decoration: BoxDecoration(
-                                    color: Colors.lightGreenAccent,
+                                    color: ColorName.primaryColor,
                                     borderRadius: BorderRadius.circular(20.r),
                                     border: Border.all(color: Colors.grey)),
                                 child: Center(
@@ -389,8 +389,7 @@ Widget buildData(List<CurrentLocationModel> data, List<Marker> markers) {
                                                   padding: EdgeInsets.all(8.r),
                                                   margin: EdgeInsets.all(5.r),
                                                   decoration: BoxDecoration(
-                                                      color: Colors
-                                                          .lightGreenAccent,
+                                                      color: ColorName.primaryColor,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               20.r),

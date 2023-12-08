@@ -22,11 +22,8 @@ class ColorName {
   /// Color: #D9D9E2
   static const Color lightGrey = Color(0xFFD9D9E2);
 
-  /// Color: #8DC179
-  static const Color primaryColor = Color(0xFF8DC179);
-
-  /// Color: #539165
-  static const Color secondaryColor = Color(0xFF539165);
+  /// Color: #ADFF2F
+  static const Color primaryColor = Color(0xFFADFF2F);
 
   /// Color: #ffffff
   static const Color whiteColor = Color(0xFFFFFFFF);
