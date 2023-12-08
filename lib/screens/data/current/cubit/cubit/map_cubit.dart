@@ -94,12 +94,18 @@ class MapCubit extends Cubit<MapState> {
     ];
 
     for (final location in data) {
-      final markerIcon = await _getMarkerBitmapFromAsset(images.first);
+      final BitmapDescriptor markerIcon;
+      if (location.category == "People") {
+        markerIcon = await _getMarkerBitmapFromAsset(images.first);
+      }else{
+        markerIcon = await _getMarkerBitmapFromAsset(images.last);
+      }
+
       final marker = Marker(
           markerId: MarkerId(location.avatar),
           position: LatLng(location.latlng.first, location.latlng.last),
           icon: markerIcon,
-          infoWindow: InfoWindow());
+          infoWindow: InfoWindow(title: location.name));
       markers_.add(marker);
     }
 

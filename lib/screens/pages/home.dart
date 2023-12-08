@@ -63,7 +63,7 @@ Widget buidMap(List<CurrentLocationModel> data) {
         return GoogleMap(
             initialCameraPosition: CameraPosition(
               target: LatLng(data.first.latlng.first, data.first.latlng.last),
-              zoom: 10.5,
+              zoom: 13.5,
             ),
             mapType: MapType.normal,
             myLocationButtonEnabled: false,
